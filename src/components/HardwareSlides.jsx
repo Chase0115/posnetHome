@@ -8,7 +8,7 @@ const HardwareSlides = () => {
   const length = HardwareData.length;
 
   const nextSlide = () => {
-    setCurrentHW(currentHW === length-1 ? 0 : currentHW + 1);
+    setCurrentHW(currentHW === length - 1 ? 0 : currentHW + 1);
   };
   const prevSlide = () => {
     setCurrentHW(currentHW === 0 ? length - 1 : currentHW - 1);
@@ -29,12 +29,12 @@ const HardwareSlides = () => {
             >
               <AiOutlineLeftCircle
                 size={50}
-                className='absolute top-0 left-0 z-10 h-full lg:opacity-40 md:opacity-0 cursor-pointer'
+                className='absolute top-0 left-0 z-10 h-full opacity-0 md:opacity-40 cursor-pointer'
                 onClick={prevSlide}
               />
               {index === currentHW && (
-                <div className='grid lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-1 md:grid-rows-2 gap-5'>
-                  <div className='lg:col-span-2 md:col-span-1 md:border-0 lg:border-r-2 flex justify-center'>
+                <div className='grid grid-cols-1 grid-rows-2 md:grid-cols-3 md:grid-rows-1 gap-5'>
+                  <div className='col-span-1 border-0 md:col-span-2 md:border-r-2 flex justify-center'>
                     <Image src={hw.image} alt='/' width={500} height={400} />
                   </div>
                   <div className='py-10 px-5'>
@@ -56,10 +56,9 @@ const HardwareSlides = () => {
               )}
               <AiOutlineRightCircle
                 size={50}
-                className='absolute top-0 right-0 z-10 h-full lg:opacity-40 md:opacity-0 cursor-pointer '
+                className='absolute top-0 right-0 z-10 h-full opacity-0 md:opacity-40 cursor-pointer '
                 onClick={nextSlide}
               />
-              
             </div>
           );
         })}

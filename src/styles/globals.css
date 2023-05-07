@@ -22,6 +22,30 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+label {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+input {
+  border-radius: 10px;
+  margin-bottom: 0.4rem;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: 10px 10px 5px lightgray;
+}
+
+textarea {
+  border-radius: 10px;
+  padding: 1rem;
+  padding-left: 1rem;
+  box-shadow: 10px 10px 5px lightgray;
+}
+
 .custom-img {
   background-image: url("../../public/assets/company_bg.jpg");
+}
+
+.contact-img {
+  background-image: url("../../public/assets/Index_deco_map.png");
 }
