@@ -4,6 +4,7 @@ import Head from "next/head";
 import Hero from "@/components/Hero";
 import Statistics from "@/components/Statistics";
 import Footer from "@/components/Footer";
+import HardwareSlides from '@/components/HardwareSlides';
 
 const comme = Comme({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function Home() {
             data secure and safe.'
       />
       <Statistics />
+      <HardwareSlides/>
       <Footer />
     </>
   );

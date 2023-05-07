@@ -38,25 +38,25 @@ const Navbar = () => {
         </Link>
 
         <ul className='hidden md:flex'>
-          <li className='text-lg cursor-pointer'>
+          <li className='text-xl font-bold cursor-pointer mr-7'>
             <Link href='/'>Home</Link>
           </li>
-          <li className='text-lg cursor-pointer'>
+          <li className='text-xl font-bold cursor-pointer mr-7'>
             <Link href='/'>Hardware</Link>
           </li>
-          <li className='text-lg cursor-pointer'>
+          <li className='text-xl font-bold cursor-pointer mr-7'>
             <Link href='/'>About</Link>
           </li>
-          <li className='text-lg cursor-pointer'>
+          <li className='text-xl font-bold cursor-pointer mr-7'>
             <Link href='/'>FAQ</Link>
           </li>
-          <li className='text-lg cursor-pointer'>
+          <li className='text-xl font-bold cursor-pointer'>
             <Link href='/'>Contact</Link>
           </li>
         </ul>
 
         {/* Mobile button */}
-        <div className='block sm:hidden z-10' onClick={handleNav}>
+        <div className='block md:hidden z-10' onClick={handleNav}>
           {isnav ? (
             <AiOutlineClose size={20} style={{ color: "black" }} />
           ) : (
@@ -74,31 +74,31 @@ const Navbar = () => {
           <ul>
             <li
               onClick={handleNav}
-              className='p-4 text-4xl hover:text-gray-500'
+              className='p-4 text-3xl hover:text-gray-500'
             >
               <Link href='/'>Home</Link>
             </li>
             <li
               onClick={handleNav}
-              className='p-4 text-4xl hover:text-gray-500'
+              className='p-4 text-3xl hover:text-gray-500'
             >
               <Link href='/'>Hardware</Link>
             </li>
             <li
               onClick={handleNav}
-              className='p-4 text-4xl hover:text-gray-500'
+              className='p-4 text-3xl hover:text-gray-500'
             >
               <Link href='/'>About</Link>
             </li>
             <li
               onClick={handleNav}
-              className='p-4 text-4xl hover:text-gray-500'
+              className='p-4 text-3xl hover:text-gray-500'
             >
               <Link href='/'>FAQ</Link>
             </li>
             <li
               onClick={handleNav}
-              className='p-4 text-4xl hover:text-gray-500'
+              className='p-4 text-3xl hover:text-gray-500'
             >
               <Link href='/'>Contact</Link>
             </li>
