@@ -7,8 +7,6 @@ import Footer from "@/components/Footer";
 import HardwareSlides from "@/components/HardwareSlides";
 import Contact from "@/components/Contact";
 
-const comme = Comme({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
