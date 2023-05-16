@@ -8,7 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -40,9 +39,9 @@ textarea {
 }
 
 .custom-img {
-  background-image: url("/public/assets/company_bg.jpg");
+  background-image: url("../../public/assets/company_bg.jpg");
 }
 
 .contact-img {
-  background-image: url("/public/assets/Index_deco_map.png");
+  background-image: url("../../public/assets/Index_deco_map.png");
 }

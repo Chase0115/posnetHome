@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center max-w-[1240px] p-8 mt-[-10px] m-auto'>
         <Link href='/'>
           <Image
-            src='/public/assets/logo-header.png'
+            src='../../public/assets/logo-header.png'
             alt='/'
             width={240}
             height={20}

@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='flex-[9] grid lg:grid-cols-4 md:grid-cols-2 w-full max-w-[1240px] m-auto text-white gap-[4rem] py-20'>
         <div>
           <Image
-            src='/public/assets/logo-0.png'
+            src='../../public/assets/logo-0.png'
             alt='/'
             width={250}
             height={30}

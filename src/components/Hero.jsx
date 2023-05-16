@@ -23,7 +23,7 @@ const Hero = ({ heading, message }) => {
         </div>
         <div className='hidden md:block'>
           <Image
-            src='/public/assets/Business_1.png'
+            src='../../public/assets/Business_1.png'
             alt='/'
             width={500}
             height={350}
