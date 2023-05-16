@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import CountNumber from "@/styles/CountNumber";
 
 const StatisticBox = ({ icon, desc, numbers }) => {
   return (
@@ -6,7 +7,9 @@ const StatisticBox = ({ icon, desc, numbers }) => {
       <div className='bg-red-600 mr-4 text-8xl text-white'>{icon}</div>
       <div className='text-white'>
         <p className='text-lg font-medium'>{desc}</p>
-        <p className='text-4xl text-center font-bold'>{numbers} +</p>
+        <div className='flex text-4xl text-center font-bold'>
+          <CountNumber from={0} to={parseInt(numbers)} />{" +"}
+        </div>
       </div>
     </div>
   );

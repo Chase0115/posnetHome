@@ -20,6 +20,7 @@ const HardwareSlides = () => {
         {HardwareData.map((hw, index) => {
           return (
             <div
+              id='hardware'
               key={index}
               className={
                 index === currentHW

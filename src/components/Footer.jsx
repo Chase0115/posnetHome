@@ -44,7 +44,7 @@ const Footer = () => {
         />
         <FooterBox
           heading='Site Map'
-          items={["Hardware", "Customers", "About", "FAQ", "Contact"]}
+          items={["Hardware", "About", "Customers", "Contact"]}
         />
         <FooterBox
           heading='Contact'
@@ -56,16 +56,17 @@ const Footer = () => {
             <div key={1} className='flex items-center'>
               <FaLocationArrow size={20} />
               <span className='ml-4'>
-                14/20-30 Stubbs St <br/> Silverwater, NSW 2128
+                14/20-30 Stubbs St <br /> Silverwater, NSW 2128
               </span>
             </div>,
             <div key={2} className='flex items-center'>
               <BiSupport size={25} />
               <span className='ml-3'>
-                Technical Support<br/>
+                Technical Support
+                <br />
                 9am ~ 8pm
               </span>
-            </div>
+            </div>,
           ]}
         />
       </div>

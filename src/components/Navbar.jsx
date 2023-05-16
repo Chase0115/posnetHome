@@ -39,19 +39,21 @@ const Navbar = () => {
 
         <ul className='hidden md:flex'>
           <li className='text-xl font-bold cursor-pointer mr-7'>
-            <Link href='/'>Home</Link>
+            <Link href='/#home' scroll={false}>
+              Home
+            </Link>
           </li>
           <li className='text-xl font-bold cursor-pointer mr-7'>
-            <Link href='/'>Hardware</Link>
+            <Link href='/#about'>About</Link>
           </li>
           <li className='text-xl font-bold cursor-pointer mr-7'>
-            <Link href='/'>About</Link>
+            <Link href='/#hardware'>Hardware</Link>
           </li>
-          <li className='text-xl font-bold cursor-pointer mr-7'>
-            <Link href='/'>FAQ</Link>
-          </li>
+
           <li className='text-xl font-bold cursor-pointer'>
-            <Link href='/'>Contact</Link>
+            <Link href='/#contact' scroll={false}>
+              Contact
+            </Link>
           </li>
         </ul>
 
@@ -76,13 +78,9 @@ const Navbar = () => {
               onClick={handleNav}
               className='p-4 text-3xl hover:text-gray-500'
             >
-              <Link href='/'>Home</Link>
-            </li>
-            <li
-              onClick={handleNav}
-              className='p-4 text-3xl hover:text-gray-500'
-            >
-              <Link href='/'>Hardware</Link>
+              <Link href='/#home' scroll={false}>
+                Home
+              </Link>
             </li>
             <li
               onClick={handleNav}
@@ -94,13 +92,16 @@ const Navbar = () => {
               onClick={handleNav}
               className='p-4 text-3xl hover:text-gray-500'
             >
-              <Link href='/'>FAQ</Link>
+              <Link href='/'>Hardware</Link>
             </li>
+
             <li
               onClick={handleNav}
               className='p-4 text-3xl hover:text-gray-500'
             >
-              <Link href='/'>Contact</Link>
+              <Link href='/#contact' scroll={false}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

@@ -17,11 +17,11 @@ export default function Home() {
         <title>Posnet | Point of Sale</title>
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-        <script
+        {/* <script
           async
           defer
           src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBZiyTMTCwNfSpe56-M6X8okKbkPDip-9Y&callback=initMap'
-        ></script>
+        ></script> */}
       </Head>
       <Hero
         heading='More Than Just a POS, POSNET'
