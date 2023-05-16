@@ -16,14 +16,14 @@ const Hero = ({ heading, message }) => {
             <AnimatedTextWord text={heading} />
           </h2>
           <h2 className='text-3xl font-bold mb-9 md:hidden'>
-            <AnimatedTextWord text="More than just a POS," />
-            <AnimatedTextWord text="POSNET" />
+            <AnimatedTextWord text='More than just a POS,' />
+            <AnimatedTextWord text='POSNET' />
           </h2>
           <p className='text-lg'>{message}</p>
         </div>
         <div className='hidden md:block'>
           <Image
-            src='/assets/Business_1.png'
+            src='../../public/assets/Business_1.png'
             alt='/'
             width={500}
             height={350}

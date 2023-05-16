@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className='flex justify-between items-center max-w-[1240px] p-8 mt-[-10px] m-auto'>
         <Link href='/'>
           <Image
-            src='/assets/logo-header.png'
+            src='../public/assets/logo-header.png'
             alt='/'
             width={240}
             height={20}
@@ -44,10 +44,14 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='text-xl font-bold cursor-pointer mr-7'>
-            <Link href='/#about'>About</Link>
+            <Link href='/#about' scroll={false}>
+              About
+            </Link>
           </li>
           <li className='text-xl font-bold cursor-pointer mr-7'>
-            <Link href='/#hardware'>Hardware</Link>
+            <Link href='/#hardware' scroll={false}>
+              Hardware
+            </Link>
           </li>
 
           <li className='text-xl font-bold cursor-pointer'>
@@ -86,13 +90,13 @@ const Navbar = () => {
               onClick={handleNav}
               className='p-4 text-3xl hover:text-gray-500'
             >
-              <Link href='/'>About</Link>
+              <Link href='/#about'>About</Link>
             </li>
             <li
               onClick={handleNav}
               className='p-4 text-3xl hover:text-gray-500'
             >
-              <Link href='/'>Hardware</Link>
+              <Link href='/#hardware'>Hardware</Link>
             </li>
 
             <li

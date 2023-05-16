@@ -1,31 +1,31 @@
 export const HardwareData = [
   {
-    image: "/assets/ApexaGT.jpg",
+    image: "../../public/assets/ApexaGT.jpg",
     name: "Apexa GT POS",
     color: ["white", "Gray"],
   },
   {
-    image: "/assets/a11-gray-1.png",
+    image: "../../public/assets/a11-gray-1.png",
     name: "A11 printer",
     color: ["white", "black"],
   },
   {
-    image: "/assets/CashDrawer.png",
+    image: "../../public/assets/CashDrawer.png",
     name: "CashDrawer",
     color: ["black"],
   },
   {
-    image: "/assets/DualMonitor.png",
+    image: "../../public/assets/DualMonitor.png",
     name: "Dual Monitor",
     color: ["white", "Gray"],
   },
   {
-    image: "/assets/scanner-gray.png",
+    image: "../../public/assets/scanner-gray.png",
     name: "Scanner",
     color: ["Gray"],
   },
   {
-    image: "/assets/scale-gray.png",
+    image: "../../public/assets/scale-gray.png",
     name: "Scale",
     color: ["White"],
   },
