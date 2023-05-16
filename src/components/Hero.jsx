@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/legacy/image";
 import AnimatedTextWord from "@/styles/AnimatedTextWord";
+import { prefix } from "@/config/config";
 
 const Hero = ({ heading, message }) => {
   return (
     <div
       id='home'
-      className='flex items-center h-screen pd-12 bg-fixed bg-contain custom-img px-5'
+      className='flex items-center h-screen pd-12 bg-fixed bg-contain px-5'
+      style={{ backgroundImage: `url(${prefix}/assets/company_bg.jpg)`}}
     >
       {/*Overlay*/}
       <div className='absolute top-0 bottom-0 left-0 right-0 z-[2] '></div>
@@ -23,7 +25,7 @@ const Hero = ({ heading, message }) => {
         </div>
         <div className='hidden md:block'>
           <Image
-            src='../../public/assets/Business_1.png'
+            src={`${prefix}/assets/Business_1.png`}
             alt='/'
             width={500}
             height={350}

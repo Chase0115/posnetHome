@@ -9,6 +9,7 @@ import {
 } from "react-icons/ai";
 import { BiPhoneCall, BiSupport } from "react-icons/bi";
 import { FaLocationArrow } from "react-icons/fa";
+import { prefix } from "@/config/config";
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
       <div className='flex-[9] grid lg:grid-cols-4 md:grid-cols-2 w-full max-w-[1240px] m-auto text-white gap-[4rem] py-20'>
         <div>
           <Image
-            src='../../public/assets/logo-0.png'
+            src={`${prefix}/assets/logo-0.png`}
             alt='/'
             width={250}
             height={30}
@@ -44,7 +45,7 @@ const Footer = () => {
         />
         <FooterBox
           heading='Site Map'
-          items={["Hardware", "About", "Customers", "Contact"]}
+          items={["Home", "About", "Hardware", "Contact"]}
         />
         <FooterBox
           heading='Contact'

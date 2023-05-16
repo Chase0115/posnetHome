@@ -1,3 +1,4 @@
+import { prefix } from "@/config/config";
 import React from "react";
 
 import { HiLocationMarker, HiPhone } from "react-icons/hi";
@@ -6,7 +7,8 @@ const Contact = () => {
   return (
     <div
       id='contact'
-      className='flex-col items-center justify-center h-auto bg-fixed bg-center bg-cover contact-img py-20 px-5'
+      className='flex-col items-center justify-center h-auto bg-fixed bg-center bg-cover py-20 px-5'
+      style={{ backgroundImage: `url(${prefix}/assets/Index_deco_map.png)` }}
     >
       {/* Overlay */}
       <div></div>
